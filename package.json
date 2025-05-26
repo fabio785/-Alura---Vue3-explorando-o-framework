@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "http-server": "^14.1.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -24,5 +25,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "typescript": "~4.5.5"
   },
-  "rules": {"vue/multi-word-component-names": "off"}
+  "rules": {
+    "vue/multi-word-component-names": "off"
+  }
 }

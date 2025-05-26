@@ -1,5 +1,5 @@
 <template>
-    <div class="box">
+    <div class="box formulario">
         <div class="columns">
             <div class="column i-8" role="form" aria-label="Formulário para criação de uma nova tarefa" >
                 <input type="text" class="input" v-model="descricao" placeholder="Qual tarefa você deseja iniciar?"/>
@@ -38,4 +38,8 @@ export default defineComponent({
 });
 </script>
 <style>
+.formulario{
+    color:var(--texto-primario);
+    background-color: var(--bg-primario);
+}
 </style>

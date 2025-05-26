@@ -1,25 +1,27 @@
 <template>
-    <div class="box has-text-weight-bold">
+    <BoxComp>
         <div class="columns">
             <div class="column is-7">
-                {{ tarefa.descricao}}
+                {{ tarefa.descricao || 'Tarefa sem descrição' }}
             </div>
             <div class="column">
                 <CronometroTarefa :tempoEmSegundos="tarefa.duracaoEmSegundos"/>
             </div>
         </div>
-    </div>
+    </BoxComp>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
 import CronometroTarefa from './CronometroTarefa.vue'
 import ITarefa from '@/interfaces/ITarefa';
+import BoxComp from './BoxComp.vue';
 
 export default defineComponent({
     name:'TarefaItem',
     components:{
-        CronometroTarefa
+        CronometroTarefa,
+        BoxComp
     },
     props:{
         tarefa: {
